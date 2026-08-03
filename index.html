@@ -303,14 +303,32 @@
   .placeholder{ color:var(--amber); opacity:0.85; }
 .credential-panel{padding:1.2rem;border:1px solid var(--line);border-radius:6px;background:linear-gradient(135deg,var(--panel),rgba(32,40,54,.55));transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.credential-panel:hover{transform:translateY(-5px);border-color:var(--teal);box-shadow:0 12px 28px rgba(0,0,0,.22)}.credential-list{list-style:none;margin-top:1rem}.credential-list li{display:flex;align-items:center;gap:.65rem;padding:.5rem 0;color:var(--text-dim);border-bottom:1px solid rgba(43,51,65,.65);transition:color .2s ease,padding-left .2s ease}.credential-list li:last-child{border-bottom:0}.credential-list li:hover{color:var(--text);padding-left:.3rem}.credential-list li span{display:grid;place-items:center;width:18px;height:18px;border:1px solid rgba(63,167,160,.45);border-radius:50%;color:var(--teal);font-size:.68rem}.credential-list li b{font-weight:500}
   /* WHY HIRE ME */
-  .whygrid{
-    #why{max-width:1400px;margin-left:auto;margin-right:auto;}
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
-    gap:0.9rem 1.5rem;
-  }
-  .whyitem{ display:flex; align-items:center; gap:0.7rem; font-size:0.94rem; color:var(--text-dim); }
-  .whyitem svg{ width:16px; height:16px; stroke:var(--amber); flex-shrink:0; }
+  #why{
+  max-width:1400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.whygrid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+  gap:0.9rem 1.5rem;
+}
+
+.whyitem{
+  display:flex;
+  align-items:center;
+  gap:0.7rem;
+  font-size:0.94rem;
+  color:var(--text-dim);
+}
+
+.whyitem svg{
+  width:16px;
+  height:16px;
+  stroke:var(--amber);
+  flex-shrink:0;
+}
 
   /* CONTACT */
   .contact{
